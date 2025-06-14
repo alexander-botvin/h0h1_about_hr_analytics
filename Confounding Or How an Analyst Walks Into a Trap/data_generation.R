@@ -39,6 +39,3 @@ df$Experience <- scales::rescale(df$Experience, to = c(0, 20))
 df$Learning <- round(scales::rescale(df$Learning, to = c(0, 100)),0)
 df$Efficiency <- scales::rescale(df$Efficiency, to = c(0, 100))
 df$ManagerRating <- round(scales::rescale(df$ManagerRating, to = c(1, 5)))
-
-write.csv(df, 'df.csv')
-
